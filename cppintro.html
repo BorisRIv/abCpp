@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="bg">
 
+<div class="sidebar">
+  <a href="index.html">HOME</a>
+  <a class="active" href="cppintro.html">C++ Intro</a>
+  <a href="#">Output</a>
+  <a href="variables.html">Variables</a>
+  <a href="input.html">Input</a>
+  <a href="#">Conditions</a>
+  <a href="index-while.html">While Loop</a>
+  <a href="#">Do-While Loop</a>
+  <a href="#">For Loop</a>
+  <a href="#">Libraries</a>
+</div>
+
+<div class="content">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>abC++ - Tutorials</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-   <div class="sidebar">
- 	<a href="index.html">HOME</a>
-	<a class="active" href="cppintro.html">C++ Intro</a>
-	<a href="#">Output</a>
-  	<a href="variables.html">Variables</a>
- 	<a href="input.html">Input</a>
-	<a href="#">Conditions</a>
-	<a href="index-while.html">While Loop</a>
-	<a href="index-do_while.html">Do-While Loop</a>
- 	<a href="#">For Loop</a>
-  	<a href="#">Libraries</a>
-    </div>
-	
-    <div class="content">
     <header>
         <div class="container">
             <div id="branding">
@@ -36,7 +35,6 @@
                     <li class="current"><a href="index.html">Tutorials</a></li>
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contact.html">Contact</a></li>
-		    <li><a href="sources.html">Sources</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,12 +57,12 @@
 		<h2>Какво трябва да зная, преди да започна да пиша код?</h2>
 		<h3>С++ е език с ООП, което означава, че дори една стандартна програма е базирана на обекти. Когато едва започвате да програмирате обаче, това може да е сложно. Докато не научите за обектите е важно да запомните, че следния код трябва да присъства във всяка ваша програма: </h3>
 		   <br>
-		   <pre><code><font color="#a3e118">#include &#60iostream></font>
-<font color="#7dc7ff">using namespace</font> <font color="#a3e118">std</font>;
-<font color="#7dc7ff">int</font> main()
+		   <pre><code>#include <iostream>
+using namespace std;
+int main()
 {
 
-<font color="#7dc7ff">return</font> 0;
+return 0;
 }            </code></pre>
 		<h3>Всяка операция в С++ завършва с ";"</h3>
 		<h3>Коментари, т.е. текст който не се чете като код, се отбелязва с "//".</h3>
@@ -76,9 +74,6 @@
     <footer>
         <p>abC++ &copy; 2024</p>
     </footer>
-
-    </div>
-	
 </body>
-
+</div>
 </html>
