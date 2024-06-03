@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<div class="sidebar">
+  <a href="index.html">HOME</a>
+  <a href="cppintro.html">C++ Intro</a>
+  <a href="#">Output</a>
+  <a class="active" href="variables.html">Variables</a>
+  <a href="input.html">Input</a>
+  <a href="#">Conditions</a>
+  <a href="index-while.html">While Loop</a>
+  <a href="#">Do-While Loop</a>
+  <a href="#">For Loop</a>
+  <a href="#">Libraries</a>
+</div>
+
+<div class="content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abC++ - Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>abC++</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Tutorials</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Variables / Променливи</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+		<h2>Какво е променлива?</h2>
+        <h3>Променливите съдържат стойности, които могат да се променят. Те са като кутии, които съдържат даден тип информация.</h3>
+        <br>
+		<h2>Инициализация</h2>
+        <h3>За да знае програмата какъв вид е кутията (какъв е типа на променливата) и как се казва тя (какво е името на променливата) ние я инициализацираме. </h3>
+            <pre><code>
+     int num;
+//    ^   ^
+//    |   |
+//   тип  име
+            </code></pre>
+		<br>
+		<h3>В примера създадохме променлива от тип int с име num. Тя е цяло число и можем да я извикаме с запазеното име num.</h3>
+		<h3>По повече от един начин можем да ѝ зададем стойност. Например: </h3>
+            <pre><code>
+     int num=5;
+	 num = 7;
+            </code></pre>
+		<br>
+		<h2>Операции</h2>
+		<h3>Можем и чрез следните аритметични операции да променяме стойността: </h3>
+            <pre><code>
+	 num = 7+5;
+	 num = 7*5;  //умножава 7 по 5
+	 num = 10/5;  //дели 10 на 5
+	 num = 7%5;  //дава остатъка на 7 при деление на 5
+	 num = 7-5;
+	 num ++;     //увеличава сегашната стойност на num с 1
+	 num--;		//намалява сегашната стойност на num с 1
+	 num+=5; 	//увеличава сегашната стойност на num с 5
+				// горния ред работи аналогично за другите операции
+            </code></pre>
+		<br>
+		<h2>Типове променливи</h2>
+		<h3>Съществуват следните типове променливи:</h3>
+<table>
+		<tr>
+			<th>Тип:</th>
+			<th>Каква информация пази:</th>
+		</tr>
+		<tr>
+			<td>int</td>
+			<td>Цели числа</td>
+		</tr>
+		<tr>
+			<td>char</td>
+			<td>ASCII Символи (Букви например)</td>
+		</tr>
+		<tr>
+			<td>float</td>
+			<td>Дробни числа</td>
+		</tr>
+		<tr>
+			<td>double</td>
+			<td>Дробни числа</td>
+		</tr>
+		<tr>
+			<td>bool</td>
+			<td>Истина или лъжа (Бинарна стойност)</td>
+		</tr>
+		<tr>
+			<td>string</td>
+			<td>Поредица от данни (възпр. като символи)</td>
+		</tr>
+		<tr>
+			<td>auto</td>
+			<td>Променя се спрямо подадените данни</td>
+		</tr>
+		<tr>
+			<td>void</td>
+			<td>Празен тип (Използва се почти само за функции)</td>
+		</tr>
+</table>
+		</div>
+    </section>
+
+    <footer>
+        <p>abC++ &copy; 2024</p>
+    </footer>
+</body>
+</div>
+</html>
