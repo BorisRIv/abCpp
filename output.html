@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>abC++ - Tutorials / While Loop</title>
+    <title>abC++ - Tutorials</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="sidebar">
+
+  <div class="sidebar">
   	<a href="index.html">HOME</a>
   	<a href="cppintro.html">C++ Intro</a>
-  	<a href="output.html">Output</a>
+  	<a class="active" href="output.html">Output</a>
   	<a href="variables.html">Variables</a>
   	<a href="input.html">Input</a>
 	<a href="conditions.html">Conditions</a>
-  	<a class="active" href="index-while.html">While Loop</a>
+  	<a href="index-while.html">While Loop</a>
   	<a href="index-do_while.html">Do-While Loop</a>
   	<a href="for-cycle.html">For Loop</a>
 	<a href="libraries.html">Libraries</a>
-	</div>
+  </div>
 
-    <div class="content">
+  <div class="content">
     <header>
         <div class="container">
             <div id="branding">
@@ -43,34 +44,32 @@
 
     <section id="showcase">
         <div class="container">
-            <h1>While Loop / While цикли</h1>
+            <h1>Output / Извеждане</h1>
         </div>
     </section>
 
     <section id="main">
         <div class="container">
-		
-			<h2>Дефиниция</h2>
-			<p>While циклите са цикли, които изпълняват даден код, когато подаденото им условие е изпълнено.</p>
-			<br>
-			<br>
-			<h2>Синтаксис</h2>
-		
-            <pre><code><font color="#7dc7ff">
-while</font>(<условие>) // "while" е запазена дума
+		<h2>Как се извежда в С++?</h2>
+        <h3>Извеждането в С++ най-често се случва с обекта cout и оператора "&#60&#60". Например</h3>
+		<br>
+		   <pre><code><font color="#7dc7ff">#include &#60iostream></font>
+<font color="#7dc7ff">using namespace</font> <font color="#a3e118">std</font>;
+<font color="#7dc7ff">int</font> main()
 {
-	<код, който да бъде изпълнен>; // този код ще бъде изпълнен, само ако условието е истина
-}
-            </code></pre>
-        </div>
+	<font color="#7dc7ff">int</font> num=69;
+	<font color="#a3e118">cout</font>&#60&#60num;
+	<font color="#7dc7ff">return</font> 0;
+}           </code></pre>
+		<h3>Тази програма ще изведе стойността на num, в този случай - 69.</h3>
+		</div>
     </section>
 
     <footer>
         <p>abC++ &copy; 2024</p>
     </footer>
-	
-	</div>
-	
+    </div>
+	  
 </body>
 
 </html>

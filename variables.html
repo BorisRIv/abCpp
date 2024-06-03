@@ -1,20 +1,6 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html>
 
-<div class="sidebar">
-  <a href="index.html">HOME</a>
-  <a href="cppintro.html">C++ Intro</a>
-  <a href="#">Output</a>
-  <a class="active" href="variables.html">Variables</a>
-  <a href="input.html">Input</a>
-  <a href="#">Conditions</a>
-  <a href="index-while.html">While Loop</a>
-  <a href="#">Do-While Loop</a>
-  <a href="#">For Loop</a>
-  <a href="#">Libraries</a>
-</div>
-
-<div class="content">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +11,22 @@
 </head>
 
 <body>
+
+    <div class="sidebar">
+  	<a href="index.html">HOME</a>
+  	<a href="cppintro.html">C++ Intro</a>
+  	<a href="output.html">Output</a>
+  	<a class="active" href="variables.html">Variables</a>
+  	<a href="input.html">Input</a>
+	<a href="conditions.html">Conditions</a>
+  	<a href="index-while.html">While Loop</a>
+  	<a href="index-do_while.html">Do-While Loop</a>
+  	<a href="for-cycle.html">For Loop</a>
+	<a href="libraries.html">Libraries</a>
+    </div>
+
+    <div class="content">
+	
     <header>
         <div class="container">
             <div id="branding">
@@ -35,6 +37,7 @@
                     <li class="current"><a href="index.html">Tutorials</a></li>
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+		    <li><a href="sources.html">Sources></a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +57,7 @@
 		<h2>Инициализация</h2>
         <h3>За да знае програмата какъв вид е кутията (какъв е типа на променливата) и как се казва тя (какво е името на променливата) ние я инициализацираме. </h3>
             <pre><code>
-     int num;
+     <font color="#7dc7ff">int</font> num;
 //    ^   ^
 //    |   |
 //   тип  име
@@ -63,23 +66,24 @@
 		<h3>В примера създадохме променлива от тип int с име num. Тя е цяло число и можем да я извикаме с запазеното име num.</h3>
 		<h3>По повече от един начин можем да ѝ зададем стойност. Например: </h3>
             <pre><code>
-     int num=5;
-	 num = 7;
+     <font color="#7dc7ff">int</font> num=5;
+     num = 7;
             </code></pre>
 		<br>
 		<h2>Операции</h2>
 		<h3>Можем и чрез следните аритметични операции да променяме стойността: </h3>
             <pre><code>
 	 num = 7+5;
-	 num = 7*5;  //умножава 7 по 5
+	 num = 7*5;   //умножава 7 по 5
 	 num = 10/5;  //дели 10 на 5
-	 num = 7%5;  //дава остатъка на 7 при деление на 5
+	 num = 7%5;   //дава остатъка на 7 при деление на 5
 	 num = 7-5;
-	 num ++;     //увеличава сегашната стойност на num с 1
-	 num--;		//намалява сегашната стойност на num с 1
-	 num+=5; 	//увеличава сегашната стойност на num с 5
-				// горния ред работи аналогично за другите операции
+	 num ++;      //увеличава сегашната стойност на num с 1
+	 num--;	      //намалява сегашната стойност на num с 1
+	 num+=5;      //увеличава сегашната стойност на num с 5
+	              // горния ред работи аналогично за другите операции
             </code></pre>
+		<h3><i>* Имайте предвид, че ако пазите стойност в int променлива, при деление ( / ) С++ заравнява надолу към най-близкото цяло число. Например 9/2 дава 4. Ако пазите стойността в double или float, би се запазила като дроб (Примера от по-рано би дал 4.5).</i></h3>
 		<br>
 		<h2>Типове променливи</h2>
 		<h3>Съществуват следните типове променливи:</h3>
@@ -127,6 +131,9 @@
     <footer>
         <p>abC++ &copy; 2024</p>
     </footer>
-</body>
+
 </div>
+	    
+</body>
+
 </html>
