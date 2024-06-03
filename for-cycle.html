@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abC++ - Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="sidebar">
+ 	<a href="index.html">HOME</a>
+	<a class="active" href="cppintro.html">C++ Intro</a>
+	<a href="#">Output</a>
+  	<a href="variables.html">Variables</a>
+ 	<a href="input.html">Input</a>
+	<a href="#">Conditions</a>
+	<a href="index-while.html">While Loop</a>
+	<a href="index-do_while.html">Do-While Loop</a>
+ 	<a href="#">For Loop</a>
+  	<a href="#">Libraries</a>
+    </div>
+	
+    <div class="content">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>abC++</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Tutorials</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+		    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>For Loop / For цикъл</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+		<h2>Какво е "For" цикъл?</h2>
+        <h3>Циклите for в C++ се използват за многократно изпълнение на блок код, докато определено условие е вярно. Те имат следния синтаксис:</h3>
+        <br>
+		<pre><code><font color="#7dc7ff">for</font>(задаване на начална стойност; условие; промяна на стойността)
+{
+	оператори;
+}            </code></pre>
+		<br>
+		<h2>Основни части на "For" цикъл</h2>
+		<h3>1. Задаване на начална стойност</h3>
+		<ul>
+			<li>● Изпълнява се само веднъж в началото на цикъла</li>
+			<li>● Обикновено се използва за инициализиране на променлива за броене</li>
+			<li>● Пример: "int i=0;"</li>
+		</ul>
+		<br>
+		<h3>2. Условие</h3>
+		<ul>
+			<li>● Проверява се преди всяко изпълнение на тялото на цикъла</li>
+			<li>● Ако условието е вярно, блокът код се изпълнява</li>
+			<li>● Ако условието е невярно, цикълът приключва</li>
+			<li>● Пример: "i<10;"</li>
+		</ul>
+		<br>
+		<h3>3. Промяна на стойността</h3>
+		<ul>
+			<li>● Изпълнява се след всяко изпълнение на тялото на цикъла</li>
+			<li>● Обикновено се използва за увеличаване или намаляване на променливата за броене</li>
+			<li>● Пример: "i++" (увеличава "i" с 1)</li>
+		</ul>
+		<br>
+		<h2>Пример за "For" цикъл</h2>
+		<pre><code><font color="#a3e118">#include &#60iostream></font>
+<font color="#7dc7ff">using namespace</font> <font color="#a3e118">std</font>;
+<font color="#7dc7ff">int</font> main()
+{
+	<font color="#7dc7ff">for</font>(int i=0; i<5; i++)
+	{
+		<font color="#7dc7ff">cout</font>&#60&#60i&#60&#60<font color="#7dc7ff">endl</font>;
+	}
+	<font color="#7dc7ff">return</font> 0;
+}            </code></pre>
+	<h3>Този код извежда стойностите на i, в случая от 0 до 4 включително.</h3>
+	<br>
+	<h2>Вложени "For" цикли</h2>
+	<h3>Вложените "For" цикли (или For във For) са цикли, които се намират вътре в други цикли. Те са полезни за работа с двумерни масиви или за изпълнение на сложни итерационни задачи.</h3>
+	<br>
+	<h2>Пример за вложени "For" цикли</h2>
+    <pre><code><font color="#a3e118">#include &#60iostream></font>
+<font color="#7dc7ff">using namespace</font> <font color="#a3e118">std</font>;
+<font color="#7dc7ff">int</font> main()
+{
+    <font color="#7dc7ff">for</font>(int i=1; i<=3; i++)
+    {
+        <font color="#7dc7ff">for</font>(int j=1; j<=2; j++)
+        {
+            <font color="#7dc7ff">cout</font>&#60&#60"i: "&#60&#60i&#60&#60, j: "&#60&#60j&#60&#60<font color="#7dc7ff">endl</font>;
+        }
+    }
+    <font color="#7dc7ff">return</font> 0;
+}            </code></pre>
+	<br>
+	<h3>Първият for цикъл се изпълнява 3 пъти, а вторият се изпълнява 2*3 пъти (защото е в първия for цикъл)</h3>
+	<br>
+	<h3>Изходът на примера ще бъде:</h3>
+	<pre><code>i: 1, j: 1
+i: 1, j: 2
+i: 2, j: 1
+i: 2, j: 2
+i: 3, j: 1
+i: 3, j: 2	</pre></code>
+	</div>
+    </section>
+	
+    <footer>
+        <p>abC++ &copy; 2024</p>
+    </footer>
+
+    </div>
+	
+</body>
+
+</html>
