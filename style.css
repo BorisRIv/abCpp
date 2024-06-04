@@ -112,7 +112,7 @@ header a:hover {
     color: #ddd;
 }
 #showcase {
-    min-height: 400px;
+    min-height: 300px;
     background: linear-gradient(to right, #77aaff, #5599dd);
     color: #fff;
     text-align: center;
