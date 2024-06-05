@@ -183,7 +183,7 @@ pre {
     text-align: center;
 }
 
-.button:hover {
+.button:hover, button:hover {
     background: #5599dd;
 }
 
