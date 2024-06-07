@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abC++ - Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="sidebar">
+  	<a href="index.html">HOME</a>
+  	<a href="cppintro.html">C++ Intro</a>
+  	<a href="output.html">Output</a>
+  	<a href="variables.html">Variables</a>
+  	<a href="input.html">Input</a>
+	<a class="active" href="conditions.html">Conditions</a>
+	<a href="switch-case.html">Switch Case</a>
+  	<a href="index-while.html">While Loop</a>
+  	<a href="index-do_while.html">Do-While Loop</a>
+  	<a href="for-cycle.html">For Loop</a>
+	<a href="libraries.html">Libraries</a>
+  </div>
+
+  <div class="content">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>abC++</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Tutorials</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+		    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Conditions / Условия</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+		<h2>Условия</h2>
+        <h3>Условията в С++ се усъществявят чрез условни оператори като if и else.</h3>
+		<br>
+		<h2>Оператор if</h2>
+        <h3>На този оператор се подава условие и ако булевата му стойност е истина, зададеният му код се изпълнява, а ако е лъжа - не. Синтаксисът му е следния:</h3>
+		   <pre><code>
+	<font color="#7dc7ff">if</font> (num > 9);  // примерно условие
+	{
+	    num=9;    // примерно действие
+	}
+	</code></pre>
+		<h3>Съществуват следните оператори за булеви изрази:</h3>
+	<pre><code>
+    8 > 9  // ">" проверява дали 8 е по-голямо от 9
+    8 &#60 9  // "&#60" проверява дали 8 е по-малко от 9
+    8 == 9  // "==" проверява дали 8 е равно на 9
+    8 != 9  // "!=" проверява дали 8 НЕ е равно на 9
+    8 &#60= 9  // "&#60=" проверява дали 8 по-малко или равно на 9
+    8 >= 9  // ">=" проверява дали 8 по-голямо или равно на 9
+	
+    (num > 3) && (num &#60 8)
+    // "&&" дава истина само когато и двете му подадени твърдения са истина, иначе дава лъжа
+    // може да се замести с "and"
+	
+    (num > 3) || (num &#60 8)
+    // "||" дава лъжа само когато и двете му подадени твърдения са лъжа, иначе дава истина
+    // може да се замести с "or"
+    
+	</code></pre>
+	<h2>Оператор else</h2>
+	<h3>Този оператор работи само когато има if над него и кода вътре се изпълнява само ако if-a не се изпълни. Например:</h3>
+	<pre><code>
+<font color="#7dc7ff">if</font> (num > 9);  // примерно условие
+{
+    num=9;    // примерно действие
+}
+<font color="#7dc7ff">else</font>
+{
+    num=12;    // примерно действие
+}
+	</code></pre>
+		</div>
+    </section>
+
+    <footer>
+        <p>abC++ &copy; 2024</p>
+    </footer>
+    </div>
+	  
+</body>
+
+</html>

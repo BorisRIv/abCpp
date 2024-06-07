@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abC++ - Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <div class="sidebar">
+  	<a href="index.html">HOME</a>
+  	<a href="cppintro.html">C++ Intro</a>
+  	<a href="output.html">Output</a>
+  	<a href="variables.html">Variables</a>
+  	<a href="input.html">Input</a>
+	<a href="conditions.html">Conditions</a>
+	<a class ="active" href="switch-case.html">Switch Case</a>
+  	<a href="index-while.html">While Loop</a>
+  	<a href="index-do_while.html">Do-While Loop</a>
+  	<a href="for-cycle.html">For Loop</a>
+	<a href="libraries.html">Libraries</a>
+    </div>
+	
+    <div class="content">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>abC++</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Tutorials</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+		    <li><a href="sources.html">Sources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Switch Case</h1>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+		<h2>Какво е "Switch Case"?</h2>
+        <h3>"Switch Case" в C++ се използва за многократно взимане на решения на базата на стойността на една променлива. Тя предоставя удобен начин да замените множество "if-else" изрази, когато проверявате една и съща променлива срещу различни стойности. Нека разгледаме основната структура на "Switch Case":</h3>
+        <br>
+		<pre><code><font color="#7dc7ff">switch</font>(израз)
+{
+	<font color="#7dc7ff">case </font>константа-1:
+		код за изпълнение;
+		<font color="#7dc7ff">break</font>;
+	<font color="#7dc7ff">case </font>константа-2:
+		код за изпълнение;
+		<font color="#7dc7ff">break</font>;
+	<font color="#7dc7ff">default</font>:
+		код за изпълнение;
+		<font color="#7dc7ff">break</font>;
+}            </code></pre>
+		<br>
+		<h2>Конструкцията на "Switch Case"</h2>
+		<h3>1. switch(израз)</h3>
+		<ul>
+			<li>● Това е началото на "Switch Case" конструкцията</li>
+			<li>● "израз" е изразът или променливата, чиято стойност ще бъде проверявана</li>
+			<li>● "израз" трябва да бъде от тип int, char или друг целочислен тип"</li>
+		</ul>
+		<br>
+		<h3>2. case константа</h3>
+		<ul>
+			<li>● Всеки "case" блок съдържа стойност (константа), с която се сравнява "израз"</li>
+			<li>● Ако "израз" съвпада с "константа", кодът в този блок се изпълнява</li>
+			<li>● "константа" трябва да бъде уникален в рамките на един "Switch Case" и трябва да бъде от същия тип като "израз"</li>
+		</ul>
+		<br>
+		<h3>3. break</h3>
+		<ul>
+			<li>● "break" командата прекъсва изпълнението на текущия "case" блок и прескача извън "Switch Case" конструкцията</li>
+			<li>● Ако "break" липсва, изпълнението ще продължи със следващия "case" блок</li>
+		</ul>
+		<br>
+		<h3>4. default</h3>
+		<ul>
+			<li>● Това е по желание блок, който се изпълнява, ако нито един от "case" блоковете не съвпада със стойността на "израз"</li>
+			<li>● "default" блокът е полезен за обработка на неочаквани или некоректни стойности</li>
+		</ul>
+		<br>
+		<h2>Пример за "Switch Case"</h2>
+		<pre><code><font color="#a3e118">#include &#60iostream></font>
+<font color="#7dc7ff">using namespace</font> <font color="#a3e118">std</font>;
+<font color="#7dc7ff">int</font> main()
+{
+	<font color="#7dc7ff">int </font>day;
+	<font color="#7dc7ff">cin>></font>day;
+	<font color="#7dc7ff">switch</font>(day)
+	{
+		<font color="#7dc7ff">case 1:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Monday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 2:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Tuesday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 3:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Wednesday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 4:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Thursday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 5:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Friday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 6:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Saturday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">case 7:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Sunday"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+		<font color="#7dc7ff">default:</font>
+			<font color="#7dc7ff">cout</font>&#60&#60"Invalid"&#60&#60<font color="#7dc7ff">endl</font>;
+			<font color="#7dc7ff">break</font>;
+	}
+	<font color="#7dc7ff">return</font> 0;
+}            </code></pre>
+	<h3>Обяснение на примера:</h3>
+	<ul>
+		<li>● Първо се декларира и инициализира променлива "day" със стойност, нека за пример въведем "3"</li>
+		<li>● "Switch Case" конструкцията проверява стойността на "day"</li>
+		<li>● В този случай, "day" е равно на "3", така че кодът в "case 3" се изпълнява и отпечатва "Wednesday"</li>
+		<li>● "break" командата след всеки "case" блок гарантира, че програмата няма да продължи с изпълнението на следващите "case" блокове</li>
+	</ul>
+	<br>
+	<button id="btn" onclick='document.getElementById("cd").style.display="block";
+   document.getElementById("btn").style.display="none";'>За любознателните :)</button>
+    <div id="cd" style="display:none;">
+	<pre><code>
+<font color="#a3e118">#include</font> &#60iostream>
+<font color="#a3e118">#include</font> &#60conio.h> // за _kbhit и _getch
+<font color="#a3e118">#include</font> &#60Windows.h> // за Sleep()
+
+<font color="#7dc7ff">using namespace </font><font color="#a3e118">std</font>;
+
+<font color="#7dc7ff">void</font> gotoxy(<font color="#7dc7ff">int</font> x, <font color="#7dc7ff">int</font> y) {
+    COORD coord;
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+
+<font color="#7dc7ff">int</font> main() {
+    <font color="#7dc7ff">int</font> x = 2;
+    <font color="#7dc7ff">int</font> y = 2;
+
+    <font color="#7dc7ff">char</font> player;
+    <font color="#a3e118">cout</font>&#60&#60"Enter a character you want to play with: ";
+    <font color="#a3e118">cin</font>>>player;
+
+    system("cls"); // изчиства екрана
+
+    <font color="#7dc7ff">while</font> (true)
+    {
+        gotoxy(x, y);
+        <font color="#a3e118">cout</font> &#60&#60 ' ';
+
+        if (_kbhit()) // проверява дали е натиснат бутон от клавиатурата
+        {
+            <font color="#7dc7ff">char</font> key = _getch(); // запазва натиснатия бутон
+
+            <font color="#7dc7ff">switch</font> (key) {
+                <font color="#7dc7ff">case</font> 'w':
+                    y--;
+                    <font color="#7dc7ff">break</font>;
+                <font color="#7dc7ff">case</font> 's':
+                    y++;
+                    <font color="#7dc7ff">break</font>;
+                <font color="#7dc7ff">case</font> 'a':
+                    x--;
+                    <font color="#7dc7ff">break</font>;
+                <font color="#7dc7ff">case</font> 'd':
+                    x++;
+                    <font color="#7dc7ff">break</font>;
+            }
+        }
+        gotoxy(x, y);
+        <font color="#a3e118">cout</font> &#60&#60 player;
+        Sleep(100); // прави пауза Sleep(1) == 1/1000 от секундата
+    }
+
+    <font color="#7dc7ff">return</font> 0;
+}
+
+</code></pre>
+	<h3>Демонстрация на кода:</h3>
+	<video width="800" height="500" controls>
+  <source src="switch-case_primer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+	</div>
+	</div>
+    </section>
+	
+    <footer>
+        <p>abC++ &copy; 2024</p>
+    </footer>
+
+    </div>
+	
+</body>
+
+</html>
